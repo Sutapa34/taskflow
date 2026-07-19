@@ -1,7 +1,9 @@
 <?php
-use function Pest\Laravel\postJson;
+
 use App\Models\Organization;
 use App\Models\User;
+
+use function Pest\Laravel\postJson;
 
 it('registers a user and creates their organization as owner', function () {
     $response = postJson('/api/register', [

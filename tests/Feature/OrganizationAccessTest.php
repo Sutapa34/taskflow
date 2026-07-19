@@ -1,7 +1,9 @@
 <?php
-use function Pest\Laravel\actingAs;
+
 use App\Models\Organization;
 use App\Models\User;
+
+use function Pest\Laravel\actingAs;
 
 it('allows a member to view their organization', function () {
     $user = User::factory()->create();

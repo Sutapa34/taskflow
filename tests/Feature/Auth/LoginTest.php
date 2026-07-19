@@ -1,7 +1,9 @@
 <?php
-use function Pest\Laravel\postJson;
+
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
+
+use function Pest\Laravel\postJson;
 
 it('logs in with correct credentials and returns a token', function () {
     User::factory()->create([
