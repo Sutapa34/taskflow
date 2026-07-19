@@ -44,6 +44,15 @@ services:
     networks:
       - taskflow
 
+  adminer:
+    image: adminer
+    ports:
+      - "8081:8080"
+    depends_on:
+      - mysql
+    networks:
+      - taskflow
+
 networks:
   taskflow:
 
